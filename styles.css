@@ -1,3 +1,20 @@
 body {
     background-color: beige;
 }
+
+
+.box {
+    /* border: 1px solid black; */
+}
+
+.row {
+    margin: 10px 0px;
+}
+
+.item-price {
+    margin-left: 50px;
+}
+
+p > .card-title {
+    display: inline;
+}
