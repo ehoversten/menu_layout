@@ -1,3 +1,8 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
 body {
     background-color: beige;
 }
@@ -17,4 +22,9 @@ body {
 
 p > .card-title {
     display: inline;
+}
+
+.name-price {
+    display: flex;
+    justify-content: space-between;
 }
