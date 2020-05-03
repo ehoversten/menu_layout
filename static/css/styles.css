@@ -20,7 +20,8 @@ body {
 }
 
 .logo {
-    height: 200px;
+    /* height: 300px;  for computer screen */
+    height: 200px;  /* for phone screen */
     justify-content: center;
 }
 
@@ -95,4 +96,12 @@ p > .card-title {
     font-weight: 700;
     padding: 3px 5px;
     margin-bottom: 0.7rem;
+}
+
+.footer {
+
+}
+
+.food-warning {
+    justify-content: center;
 }
