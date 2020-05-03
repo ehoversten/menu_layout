@@ -1,0 +1,98 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+body {
+    background-color: beige;
+}
+
+.header {
+    padding: 0;
+}
+
+.tribal {
+    filter: invert(50%);
+}
+
+.icon-header {
+    justify-content: center;
+}
+
+.logo {
+    height: 200px;
+    justify-content: center;
+}
+
+
+.box {
+    /* border: 1px solid black; */
+    margin: 5px 0px;
+    /* height: 200px; */
+}
+
+.card {
+    height: 200px;  /* ? */
+}
+
+.row {
+    margin: 10px 0px;
+}
+
+.item-price {
+    /* margin-left: 50px; */
+    color: orange;
+}
+
+
+p > .card-title {
+    display: inline;
+}
+
+.name-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-price-1 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid orange;
+}
+
+.small-plates, .large-plates, .khachapuri {
+    border: 2px dotted grey;
+    /* border: 2px dashed grey; */
+    /* border: 2px solid grey; */
+    border-radius: 15px;
+}
+
+.khachapuri {
+    margin: 50px 0;
+}
+
+.khachapuri-subtitle {
+    /* position: relative; */
+}
+
+.k-subtitle {
+
+}
+
+.cold-items, .hot-items {
+    margin-top: 50px;
+}
+
+.menu-subtitle {
+    justify-content: center;
+    color: orange;
+}
+
+.special {
+    background-color: black;
+    color: orange;
+    font-size: small;
+    font-weight: 700;
+    padding: 3px 5px;
+    margin-bottom: 0.7rem;
+}
