@@ -1,5 +1,7 @@
 
-// -- SHARE PLATES COLD ITEMS -- //
+// ---------------------------------------//
+// --      SHARE PLATES COLD ITEMS     -- //
+// ---------------------------------------//
 const dinner_items = [
     {
         item_name: "Jonjoli Salad",
@@ -66,7 +68,10 @@ const dinner_items = [
     },
 ];
 
-// -- SHARE PLATES HOT ITEMS -- //
+
+// ---------------------------------------//
+// --      SHARE PLATES HOT ITEMS      -- //
+// ---------------------------------------//
 const dinner_items_hot = [
     {
         item_name: "Chvishtari",
@@ -158,5 +163,137 @@ const dinner_items_hot = [
         ingredients: [],
         description: "Pork and beef sausages, with salad of fennel, charred cubanelle and grilled onion, georgian-spiced mustard",
         section: "share-hot"
+    },
+]
+
+// ---------------------------------------//
+// -- KHACHAOURI AND OTHER BREAD ITEMS -- //
+// ---------------------------------------//
+const bread_items = [
+    {
+        item_name: "Imeruli",
+        item_price: [13, 16],
+        ingredients: [],
+        description: "Stuffed cheese bread",
+        section: "breads"
+    },
+    {
+        item_name: "Sokos Khachapuri",
+        item_price: 15,
+        ingredients: [],
+        description: "Stuffed cheese bread, topped with oyster and cremini mushrooms, fresh tarragon and dill",
+        section: "breads"
+    },
+    {
+        item_name: "Kubdari",
+        item_price: 15,
+        ingredients: [],
+        description: "Spicy pork and beef filling",
+        section: "breads"
+    },
+    {
+        item_name: "Megruli",
+        item_price: [14, 18],
+        ingredients: [],
+        description: "Imeruli, extra cheese on top",
+        section: "breads"
+    },
+    {
+        item_name: "Pkhlovani",
+        item_price: 13,
+        ingredients: [],
+        description: "Imeruli, stuffed with cheese, spinach and herbs",
+        section: "breads"
+    },
+    {
+        item_name: "Ajaruli",
+        item_price: 15,
+        ingredients: [],
+        description: "Boat-shaped cheese bread, organic egg",
+        section: "breads"
+    },
+    {
+        item_name: "Lobiani",
+        item_price: 12,
+        ingredients: [],
+        description: "White bean filling, served with green ajika",
+        section: "breads"
+    },
+]
+
+
+// ---------------------------------------//
+// --     LARGER PLATES TO SHARE       -- //
+// ---------------------------------------//
+const large_plates = [
+    {
+        item_name: "Chicken Mtsvadi",
+        item_price: 22,
+        ingredients: [],
+        description: "Marinated in sour cream, with house-pickled cabbage slaw, tkemali",
+        section: "large"
+    },
+    {
+        item_name: "Shila Plavi",
+        item_price: [15, 30],
+        ingredients: [],
+        description: "Risotto-style rice, sauteed oyster and cremini mushrooms",
+        section: "large"
+    },
+    {
+        item_name: "Lamb Neknebi",
+        item_price: 45,
+        ingredients: [],
+        description: "Five lamb chops, svanuri salt rub, carrot-cucumber-feta salad, tkemali",
+        section: "large"
+    },
+    {
+        item_name: "Pork Mtsvadi",
+        item_price: 22,
+        ingredients: [],
+        description: "Marinated in white wine, with house-pickled cabbage slaw, tkemali",
+        section: "large"
+    },
+    {
+        item_name: "Grilled Bostneuli Platter",
+        item_price: 25,
+        ingredients: [],
+        description: "Fennel, cubanelle pepper, potato, beets, mushrooms, cabbage salad, guda dressing, green tkemali, satsebeli",
+        section: "large"
+    },
+    {
+        item_name: "Chkmeruli",
+        item_price: [18, 28],
+        ingredients: [],
+        description: "Half or Whole roasted chicken, creamy garlic sauce, traditional breads",
+        section: "large"
+    },
+    {
+        item_name: "Lyulya Kebab",
+        item_price: 22,
+        ingredients: [],
+        description: "Ground lamb kebab, grilled khachapuri-dough flatbread, satsebeli",
+        section: "large"
+    },
+    {
+        item_name: "Mixed Frill Platter",
+        item_price: 30,
+        ingredients: [],
+        description: "Three kupati, prok neknebi & grilled chicken wings, served with potatoes, green tkemali, guda dressing, satsebeli",
+        section: "large"
+    },
+    {
+        item_name: "Beef Chashushuli",
+        item_price: 30,
+        ingredients: [],
+        description: "Braised beef, wild mushrooms, charred tomato sauce, fresh herbs",
+        section: "large"
+    },
+    {
+        item_name: "Whole Grilled Fish",
+        item_price: "MP",
+        ingredients: [],
+        description: "Fresh herbs, pepper-red onion salad, nasharapi sauce",
+        section: "large"
     },
 ]
