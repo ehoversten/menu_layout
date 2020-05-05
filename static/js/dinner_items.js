@@ -2,7 +2,7 @@
 // ---------------------------------------//
 // --      SHARE PLATES COLD ITEMS     -- //
 // ---------------------------------------//
-const dinner_items = [
+const dinner_items_cold = [
     {
         item_name: "Jonjoli Salad",
         item_price: 7,
@@ -297,3 +297,15 @@ const large_plates = [
         section: "large"
     },
 ]
+
+// module.exports = {
+//     dinner_items_cold: dinner_items_cold,
+//     dinner_items_hot: dinner_items_hot,
+//     bread_items: bread_items,
+//     large_plates: large_plates
+// }
+
+module.exports.dinner_items_cold = dinner_items_cold;
+module.exports.dinner_items_hot = dinner_items_hot;
+module.exports.bread_items = bread_items;
+module.exports.large_plates = large_plates;
