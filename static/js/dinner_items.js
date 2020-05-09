@@ -298,6 +298,8 @@ const large_plates = [
     },
 ]
 
+
+// -- FOR EXPORTING IN NODE -- //
 // module.exports = {
 //     dinner_items_cold: dinner_items_cold,
 //     dinner_items_hot: dinner_items_hot,
@@ -305,7 +307,7 @@ const large_plates = [
 //     large_plates: large_plates
 // }
 
-module.exports.dinner_items_cold = dinner_items_cold;
-module.exports.dinner_items_hot = dinner_items_hot;
-module.exports.bread_items = bread_items;
-module.exports.large_plates = large_plates;
+// module.exports.dinner_items_cold = dinner_items_cold;
+// module.exports.dinner_items_hot = dinner_items_hot;
+// module.exports.bread_items = bread_items;
+// module.exports.large_plates = large_plates;
