@@ -24,77 +24,135 @@ let large = document.querySelector(".large");
 // -- TESTING -- //
 // console.log(small_cold, small_hot, breads, large);
 
+// ------------------------------------------------- //
+//          Initialize Menu Population               //
+// ------------------------------------------------- //
+function init() {
+    populateShareCold();
+    populateShareHot();
+    populateBreads();
+    populateLargePlates();
+}
 
-console.log("Total Num: " + dinner_items_cold.length)
+// Run Program
+init();
 
-// Create an empty STRING to populate
-small_cold.innerHTML = "";
+console.log("Small Cold Num: " + dinner_items_cold.length)
+// ------------------------------------------------- //
+//   Function to Populate Cold Share Plates Section  //
+// ------------------------------------------------- //
+function populateShareCold() {
 
-dinner_items_cold.forEach(item => {
-    console.log(item.item_name);
-
-    // Add each items data to a COLUMN and CARD 
-    let temp = `<div class="col-md-4 box">
-        <div class="card">
-            <div class="card-body text-center">
-                <div class="row name-price-1">
-                    <h5 class="card-title">${item.item_name}</h5>
-                    <span class="item-price">$${item.item_price}</span>
+    // Create an empty STRING to populate
+    small_cold.innerHTML = "";
+    
+    dinner_items_cold.forEach(item => {
+        // console.log(item.item_name);
+    
+        // Add each items data to a COLUMN and CARD 
+        let temp = `<div class="col-md-4 box">
+            <div class="card">
+                <div class="card-body text-center">
+                    <div class="row name-price-1">
+                        <h5 class="card-title">${item.item_name}</h5>
+                        <span class="item-price">$${item.item_price}</span>
+                    </div>
+                    <p class="card-text">${item.description}</p>
                 </div>
-                <p class="card-text">${item.description}</p>
             </div>
-        </div>
-    </div>`;
+        </div>`;
+    
+        small_cold.innerHTML += temp;
+    });
+}
 
-    small_cold.innerHTML += temp;
-});
 
+console.log("Small Hot Num: " + dinner_items_hot.length)
+// ------------------------------------------------- //
+//   Function to Populate Cold Share Plates Section  //
+// ------------------------------------------------- //
+function populateShareHot() {
 
-// -- Build a card block for each menu item -- //
+    // Create an empty STRING to populate
+    small_hot.innerHTML = "";
 
-// small_cold.innerHTML = `<div class="col-md-4 box">
-//     <div class="card">
-//         <div class="card-body text-center">
-//             <div class="row name-price-1">
-//                 <h5 class="card-title">Food Title</h5>
-//                 <span class="item-price">$5</span>
-//             </div>
-//             <p class="card-text">Food description</p>
-//         </div>
-//     </div>
-// </div>`;
+    dinner_items_hot.forEach(item => {
+        // console.log(item.item_name);
 
-// -- Loop through Cold Menu Items -- //
-
-small_hot.innerHTML = `<div class="col-md-4 box hot-items">
-    <div class="card">
-        <div class="card-body text-center">
-            <div class="row name-price-1">
-                <h5 class="card-title">Jonjoli Salad</h5>
-                <span class="special">NEW ITEM!</span>
-                <span class="item-price">$7</span>
+        // Add each items data to a COLUMN and CARD 
+        let temp = `<div class="col-md-4 box">
+            <div class="card">
+                <div class="card-body text-center">
+                    <div class="row name-price-1">
+                        <h5 class="card-title">${item.item_name}</h5>
+                        <span class="item-price">$${item.item_price}</span>
+                    </div>
+                    <p class="card-text">${item.description}</p>
+                </div>
             </div>
-            <p class="card-text">Jonjoli, fresh and house-pickled cucumber, onion, green tomato, fresh herbs and sunflower</p>
-        </div>
-    </div>
-</div>
-`;
+        </div>`;
+
+        small_hot.innerHTML += temp;
+    });
+}
 
 
-// console.log(dinner_items_cold.length);
-// dinner_items_cold.map(item => {
-//     console.log(item.item_name);
 
-//     // -- Build a card block for each menu item -- //
-//     small_cold.innerHTML = `
-// <div class="card">
-//     <div class="card-body text-center">
-//         <div class="row name-price-1">
-//             <h5 class="card-title">${item.item_name}</h5>
-//             <span class="item-price">$${item.item_price}</span>
-//         </div>
-//         <p class="card-text">${item.description}</p>
-//     </div>
-// </div>
-// `;
-// })
+console.log("Khachaquri Num: " + breads.length)
+// ------------------------------------------------- //
+//     Function to Populate KHACHAOURI Section       //
+// ------------------------------------------------- //
+function populateBreads() {
+
+    // Create an empty STRING to populate
+    breads.innerHTML = "";
+
+    bread_items.forEach(item => {
+        // console.log(item.item_name);
+
+        // Add each items data to a COLUMN and CARD 
+        let temp = `<div class="col-md-4 box">
+            <div class="card">
+                <div class="card-body text-center">
+                    <div class="row name-price-1">
+                        <h5 class="card-title">${item.item_name}</h5>
+                        <span class="item-price">$${item.item_price}</span>
+                    </div>
+                    <p class="card-text">${item.description}</p>
+                </div>
+            </div>
+        </div>`;
+
+        breads.innerHTML += temp;
+    });
+}
+
+
+console.log("Large Num: " + large_plates.length)
+// ------------------------------------------------- //
+//     Function to Populate Large Plates Section     //
+// ------------------------------------------------- //
+function populateLargePlates() {
+
+    // Create an empty STRING to populate
+    large.innerHTML = "";
+
+    large_plates.forEach(item => {
+        // console.log(item.item_name);
+
+        // Add each items data to a COLUMN and CARD 
+        let temp = `<div class="col-md-4 box">
+            <div class="card">
+                <div class="card-body text-center">
+                    <div class="row name-price-1">
+                        <h5 class="card-title">${item.item_name}</h5>
+                        <span class="item-price">$${item.item_price}</span>
+                    </div>
+                    <p class="card-text">${item.description}</p>
+                </div>
+            </div>
+        </div>`;
+
+        large.innerHTML += temp;
+    });
+}
