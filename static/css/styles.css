@@ -7,6 +7,7 @@
     --text-highlight-color: rgb(181,92,0);          /* darkgoldenrod */
     --text-highlight-color-alt_1: rgb(175,84,0);    /* saddlebrown */
     --text-highlight-color-alt-2: rgb(156,77,32);   /* sienna */
+    --text-highlight-color-alt-3: #833611;
 
     --tribal-bg: rgb(198,191,180);                  /* silver */
     --border-color: grey;
@@ -18,7 +19,8 @@
 
 
 body {
-    background-color: rgb(255,255,255);
+    background-color: var(--main-bg-color-alt);
+    font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -26,7 +28,18 @@ body {
 }
 
 .tribal {
-    filter: invert(50%);
+    filter: invert(30%);
+    -webkit-filter: invert(30%);
+
+    /* width: 100%; */
+    position: fixed;
+    top: 5;
+
+    /* filter: sepia(25%);
+    -webkit-filter: sepia(25%); */
+
+    /* filter: hue-rotate(325deg);
+    -webkit-filter: hue-rotate(325deg); */
 }
 
 .icon-header {
@@ -35,13 +48,13 @@ body {
 
 .logo {
     /* height: 300px;  for computer screen */
-    height: 200px;  /* for phone screen */
+    /* height: 200px;  for phone screen */
+    max-height: 200px;  /* for phone screen */
     justify-content: center;
+    z-index: 1;
 }
 
-
 .box {
-    /* border: 1px solid black; */
     margin: 5px 0px;
     /* height: 200px; */
 }
@@ -55,8 +68,7 @@ body {
 }
 
 .item-price {
-    /* margin-left: 50px; */
-    color: orange;
+    color: var(--text-highlight-color);
 }
 
 
@@ -72,10 +84,7 @@ p > .card-title {
 .name-price-1 {
     display: flex;
     justify-content: space-between;
-    /* border-bottom: 2px solid orange; */
-    border-bottom: 2px solid rgb(181,92,0);
-
-    
+    border-bottom: 2px solid var(--text-highlight-color);
 }
 
 .small-plates, .large-plates, .khachapuri {
@@ -103,12 +112,13 @@ p > .card-title {
 
 .menu-subtitle {
     justify-content: center;
-    color: orange;
+    font-weight: Bold 700;
+    color: var(--text-highlight-color);
 }
 
 .special {
     background-color: black;
-    color: orange;
+    color: var(--text-highlight-color);
     font-size: small;
     font-weight: 700;
     padding: 3px 5px;
@@ -119,6 +129,24 @@ p > .card-title {
 
 }
 
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.fixed-header{
+    top: 0;
+}
+
+.fixed-footer{
+    bottom: 0;
+}
+
+
+
 .food-warning {
     justify-content: center;
 }
@@ -127,13 +155,12 @@ p > .card-title {
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-    /* body {
-        background-color: whitesmoke;
-        background-color: rgb(255, 255, 255);
-    }  */
+    body {
+        background-color: var(--main-bg-color);
+    } 
 
     .card {
-        background-color: beige;
+        background-color: var(--main-bg-color);
         border: none;
     }
 
@@ -142,12 +169,12 @@ p > .card-title {
 
 /* ----------- Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-    /* body {
-        background-color: rgb(255, 255, 255);
-    } */
+    body {
+        background-color: var(--main-bg-color);
+    }
 
     .card {
-        background-color: rgb(255, 255, 255);
+        background-color: var(--main-bg-color);
         border: none;
     }
 
