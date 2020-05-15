@@ -30,16 +30,7 @@ body {
 .tribal {
     filter: invert(30%);
     -webkit-filter: invert(30%);
-
-    /* width: 100%; */
-    position: fixed;
-    top: 5;
-
-    /* filter: sepia(25%);
-    -webkit-filter: sepia(25%); */
-
-    /* filter: hue-rotate(325deg);
-    -webkit-filter: hue-rotate(325deg); */
+    opacity: 0.5;
 }
 
 .icon-header {
@@ -118,7 +109,7 @@ p > .card-title {
 
 .menu-title {
     z-index: 1;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     font-weight: 800;
 }
 
@@ -134,23 +125,6 @@ p > .card-title {
 .footer {
 
 }
-
-.fixed-header, .fixed-footer{
-    width: 100%;
-    position: fixed;        
-    background: #333;
-    padding: 10px 0;
-    color: #fff;
-}
-
-.fixed-header{
-    top: 0;
-}
-
-.fixed-footer{
-    bottom: 0;
-}
-
 
 
 .food-warning {
@@ -190,56 +164,58 @@ p > .card-title {
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .tribal {
+        filter: invert(30%);
+        -webkit-filter: invert(30%);
+
+        position: fixed;
+        top: 5;
+    }
 }
 
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-}
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .tribal {
+        filter: invert(30%);
+        -webkit-filter: invert(30%);
+
+        position: fixed;
+        top: 5;
+    }
+
 }
 
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-}
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .tribal {
+        filter: invert(30%);
+        -webkit-filter: invert(30%);
+
+        position: fixed;
+        top: 5;
+    }
+
 }
 
-/* Portrait */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-}
 
 /* ----------- iPhone X ----------- */
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-}
+    .tribal {
+        filter: invert(30%);
+        -webkit-filter: invert(30%);
 
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-}
+        position: fixed;
+        top: 5;
+    }
 
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
 }
 
 
@@ -247,40 +223,38 @@ p > .card-title {
 
 /* Portrait and Landscape */
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+    .tribal {
+        filter: invert(30%);
+        -webkit-filter: invert(30%);
+
+        position: fixed;
+        top: 5;
+    }
 }
 
-/* Portrait */
-@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
-}
-
-/* Landscape */
-@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
-}
 
 /* ----------- Galaxy S4, S5 and Note 3 ----------- */
 
 /* Portrait and Landscape */
 @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-}
+    .tribal {
+        filter: invert(30%);
+        -webkit-filter: invert(30%);
 
-/* Portrait */
-@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-}
-
-/* Landscape */
-@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+        position: fixed;
+        top: 5;
+    }
 }
 
 /* ----------- Galaxy S6 ----------- */
 
 /* Portrait and Landscape */
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {
-}
+    .tribal {
+        filter: invert(30%);
+        -webkit-filter: invert(30%);
 
-/* Portrait */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
-}
-
-/* Landscape */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {
+        position: fixed;
+        top: 5;
+    }
 }
