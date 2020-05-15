@@ -112,8 +112,14 @@ p > .card-title {
 
 .menu-subtitle {
     justify-content: center;
-    font-weight: Bold 700;
+    /* font-weight: Bold 700; */
     color: var(--text-highlight-color);
+}
+
+.menu-title {
+    z-index: 1;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 
 .special {
