@@ -107,10 +107,17 @@ p > .card-title {
     color: var(--text-highlight-color);
 }
 
+.menu-header {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
 .menu-title {
     z-index: 1;
-    /* font-size: 1.5rem; */
     font-weight: 800;
+    font-size: 1.8rem;
+    border: 2px solid var(--text-highlight-color);
+    padding: 10px 20px;
 }
 
 .special {
