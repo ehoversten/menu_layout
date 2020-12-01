@@ -2,47 +2,47 @@
 // ---------------------------------------//
 // --      SHARE PLATES COLD ITEMS     -- //
 // ---------------------------------------//
-const dinner_items_cold = [
+const lunch_items_cold = [
     {
-        item_name: "Jonjoli Salad",
+        item_name: "Yogurt Khrashunit",
         item_price: 7,
         ingredients: [],
-        description: "Jonjoli, fresh and house-pickled cucumber, onion, green tomato, fresh herbs and sunflower",
+        description: "vanilla yogurt, blackberries, wildflower honey, almonds and pepitas",
         section: "share-cold"
     },
     {
-        item_name: "Tiflis Salad",
-        item_price: 10,
+        item_name: "Jonjoli",
+        item_price: 8,
         ingredients: [],
-        description: "Salad greens, cucumber, tomato, crumbled guda cheese, fresno pepper, lemon-tarragon dressing",
+        description: "jonjoli, fresh and house-pickled cucumber, onion, green tomato, fresh herbs and sunflower",
+        section: "share-cold"
+    },
+    {
+        item_name: "Cabbage Slaw",
+        item_price: 7,
+        ingredients: [],
+        description: "green cabbage slaw with house made pickles, fresh herbs, sunflower seeds, sunflower oil",
         section: "share-cold"
     },
     {
         item_name: "Pkhali Assorti",
         item_price: 12,
         ingredients: [],
-        description: "Seasonal pates of vegetables minced with walnuts, garlic, and herbs, served with house-made breads",
+        description: "seasonal pates of vegetables minced with walnuts, garlic, and herbs, served with house-made breads",
         section: "share-cold"
     },
     {
-        item_name: "Pickle Assorti",
-        item_price: 7,
-        ingredients: [],
-        description: "House-pickled green tomato, red cabbage, turkish peppers, cucumbers",
-        section: "share-cold"
-    },
-    {
-        item_name: "Kutaisi Salad",
+        item_name: "Dilis Salati",
         item_price: 12,
         ingredients: [],
-        description: "Tomato, cucumber, basil, red onion, cubanelle pepper, walnut dressing",
+        description: "grilled romaine, boiled egg, turkish pepper, jonjoli, mchadi crumble, guda dressing",
         section: "share-cold"
     },
     {
-        item_name: "House Spreads",
-        item_price: [5, 12],
+        item_name: "Roasted Pepper 'Bulgaruli' Spread",
+        item_price: 10,
         ingredients: [],
-        description: "Soft cheese 'nadughi', roasted pepper 'bulgaruli', roasted eggplant 'badrijani', house-made breads",
+        description: "spread of roasted pepper, chickpeas & georgian spices, house-made breads",
         section: "share-cold"
     },
     {
@@ -53,17 +53,17 @@ const dinner_items_cold = [
         section: "share-cold"
     },
     {
-        item_name: "Beets Tkemalit",
-        item_price: 12,
+        item_name: "Beet and Plum Tkemalit",
+        item_price: 10,
         ingredients: [],
-        description: "Salt-roasted beets, grilled fennel, toasted hazelnuts, georgian-spiced yougurt and red tkemali vinaigrette",
+        description: "roasted beets and plum, house tkemali, grilled jalapeno and onion, spicy yogurt sauce, sunflower",
         section: "share-cold"
     },
     {
-        item_name: "Supra Tasting Board",
-        item_price: 25,
+        item_name: "Cheese Assorti",
+        item_price: 12,
         ingredients: [],
-        description: "Seasonal vegetable pate pkhali, house-made pickles, eggplant nigvzit, bulgaruli and badrijani spreads, georgian cheese, house-made breads",
+        description: "housemade sulguni cheese, imported smoked sulguni, imported kakhetian guda, housemade ajika-spiced honey and walnuts",
         section: "share-cold"
     },
 ];
@@ -72,91 +72,42 @@ const dinner_items_cold = [
 // ---------------------------------------//
 // --      SHARE PLATES HOT ITEMS      -- //
 // ---------------------------------------//
-const dinner_items_hot = [
+const lunch_items_hot = [
     {
-        item_name: "Chvishtari",
+        item_name: "Roasted Squash Soup",
         item_price: 7,
         ingredients: [],
-        description: "Fritters of corn and smoked sulguni, lemon-mint yogurt sauce, red ajaka",
-        section: "share-hot"
-    },
-    {
-        item_name: "Ghomi",
-        item_price: 10,
-        ingredients: [],
-        description: "White cornmeal, smoked sulguni",
-        section: "share-hot"
-    },
-    {
-        item_name: "Mussels Pomodorit",
-        item_price: 12,
-        ingredients: [],
-        description: "P.E.I mussels, broth of tomato and fresh herbs, crumble of fried mchadi, walnut and lemon zest",
-        section: "share-hot"
-    },
-    {
-        item_name: "Potatoes Ojakhuri",
-        item_price: 7,
-        ingredients: [],
-        description: "Gold potatoes, utskho suneli spice, caramelized onion",
-        section: "share-hot"
-    },
-    {
-        item_name: "Lobio Kotanshi",
-        item_price: 10,
-        ingredients: [],
-        description: "Red beans stewed with traditional spices, house-made pickles, cornbread mchadi",
-        section: "share-hot"
-    },
-    {
-        item_name: "Lamb Chakapuli",
-        item_price: 14,
-        ingredients: [],
-        description: "Lamb in broth of sour plum tkemali, white wine, tarragon and other fresh herbs",
-        section: "share-hot"
-    },
-    {
-        item_name: "Soko Ketse",
-        item_price: 10,
-        ingredients: [],
-        description: "Cremini mushrooms stuffed with house-made sulguni cheese",
-        section: "share-hot"
-    },
-    {
-        item_name: "Chkhirtma",
-        item_price: 10,
-        ingredients: [],
-        description: "Sliky chicken soup, cilantro, black pepper",
-        section: "share-hot"
-    },
-    {
-        item_name: "Pork Neknebi",
-        item_price: 14,
-        ingredients: [],
-        description: "House-smoked baby back ribs, ajika glaze, pickled cabbage slaw",
+        description: "butternut squash, pumpkin, yogurt, red ajika, cilantro, mint, pumpkin seed",
         section: "share-hot"
     },
     {
         item_name: "Cauliflower Satsivi",
         item_price: 10,
         ingredients: [],
-        description: "Roasted cauliflower, walnut sauce, fresh herbs",
+        description: "roasted cauliflower, walnut sauce, fresh herbs",
         section: "share-hot"
     },
     {
-        item_name: "Megruli Kharacho",
-        item_price: 16,
+        item_name: "Soko Ketse",
+        item_price: 11,
         ingredients: [],
-        description: "Local bison stewed in thick tomato-walnut sauce",
+        description: "cremeni mushrooms stuffed with housemade sulguni cheese",
         section: "share-hot"
     },
     {
-        item_name: "Kupati",
-        item_price: 15,
+        item_name: "Khinkali Qvelit",
+        item_price: 7,
         ingredients: [],
-        description: "Pork and beef sausages, with salad of fennel, charred cubanelle and grilled onion, georgian-spiced mustard",
+        description: "soup dumplings - filling of cheese & fresh mint",
         section: "share-hot"
     },
+    {
+        item_name: "Khinkali Kalakuri",
+        item_price: 10,
+        ingredients: [],
+        description: "soup dumplings - filling of pork & beef and fresh herbs",
+        section: "share-hot"
+    }
 ]
 
 // ---------------------------------------//
@@ -291,6 +242,26 @@ const large_plates = [
     },
 ]
 
+
+// ---------------------------------------//
+// --            SANDWICHES            -- //
+// ---------------------------------------//
+const sandwiches = [
+    {
+        item_name: "Crispy Chicken Flatbread Sandwich",
+        item_price: 12,
+        ingredients: [],
+        description: "cornmeal-crusted chicken breast, aioli, red ajika honey, green cabbage slaw, pickles, sunflower seeds, choice of salad or fries",
+        section: "sandwiches"
+    },
+    {
+        item_name: "Roasted Eggplant Sandwich",
+        item_price: 12,
+        ingredients: [],
+        description: "roasted eggplant, grilled onion and cubanelle peppers, satsebeli, Imeruli, smoked sulguni, feta, fresh herbs, toasted pumpkin seeds, choice of salad or fries",
+        section: "sandwiches"
+    }
+]
 
 // -- FOR EXPORTING IN NODE -- //
 // module.exports = {

@@ -5,7 +5,7 @@
 
 // -- TESTING -- //
 // console.log("Cold Menu Items:")
-// console.log(dinner_items_cold);
+// console.log(lunch_items_cold);
 // console.log("Hot Menu Items:")
 // console.log(dinner_items_hot);
 // console.log("Bread Items:")
@@ -33,12 +33,13 @@ function init() {
     populateShareHot();
     populateBreads();
     populateLargePlates();
+    populateSandwiches();
 }
 
 // Run Program
 init();
 
-console.log("Small Cold Num: " + dinner_items_cold.length)
+console.log("Small Cold Num: " + lunch_items_cold.length)
 // ------------------------------------------------- //
 //   Function to Populate Cold Share Plates Section  //
 // ------------------------------------------------- //
@@ -47,7 +48,7 @@ function populateShareCold() {
     // Create an empty STRING to populate
     small_cold.innerHTML = "";
     
-    dinner_items_cold.forEach(item => {
+    lunch_items_cold.forEach(item => {
         // console.log(item.item_name);
     
         // Add each items data to a COLUMN and CARD 
@@ -68,7 +69,7 @@ function populateShareCold() {
 }
 
 
-console.log("Small Hot Num: " + dinner_items_hot.length)
+console.log("Small Hot Num: " + lunch_items_hot.length)
 // ------------------------------------------------- //
 //   Function to Populate Cold Share Plates Section  //
 // ------------------------------------------------- //
@@ -77,7 +78,7 @@ function populateShareHot() {
     // Create an empty STRING to populate
     small_hot.innerHTML = "";
 
-    dinner_items_hot.forEach(item => {
+    lunch_items_hot.forEach(item => {
         // console.log(item.item_name);
 
         // Add each items data to a COLUMN and CARD 
@@ -155,5 +156,36 @@ function populateLargePlates() {
         </div>`;
 
         large.innerHTML += temp;
+    });
+}
+
+
+
+console.log("Sandwich Num: " + sandwiches.length)
+// ------------------------------------------------- //
+//     Function to Populate Large Plates Section     //
+// ------------------------------------------------- //
+function populateSandwiches() {
+
+    // Create an empty STRING to populate
+    sandwiches.innerHTML = "";
+
+    sandwiches.forEach(item => {
+        // console.log(item.item_name);
+
+        // Add each items data to a COLUMN and CARD 
+        let temp = `<div class="col-md-4 box">
+            <div class="card">
+                <div class="card-body text-center">
+                    <div class="row name-price-1">
+                        <h5 class="card-title">${item.item_name}</h5>
+                        <span class="item-price">$${item.item_price}</span>
+                    </div>
+                    <p class="card-text">${item.description}</p>
+                </div>
+            </div>
+        </div>`;
+
+        sandwiches.innerHTML += temp;
     });
 }
