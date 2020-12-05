@@ -168,7 +168,7 @@ console.log("Sandwich Num: " + sandwiches.length)
 function populateSandwiches() {
 
     // Create an empty STRING to populate
-    sandwiches.innerHTML = "";
+    sandwich.innerHTML = "";
 
     sandwiches.forEach(item => {
         // console.log(item.item_name);
@@ -186,6 +186,6 @@ function populateSandwiches() {
             </div>
         </div>`;
 
-        sandwiches.innerHTML += temp;
+        sandwich.innerHTML += temp;
     });
 }

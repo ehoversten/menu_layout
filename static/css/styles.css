@@ -23,6 +23,10 @@ body {
     font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
+.wrapper {
+    /* max-width: fit-content; */
+}
+
 .header {
     padding: 0;
 }
@@ -31,6 +35,10 @@ body {
     filter: invert(30%);
     -webkit-filter: invert(30%);
     opacity: 0.5;
+    max-width: 1125px;
+    /* max-width: 100%; */
+    /* width: 100%; */
+    /* margin: auto; */
 }
 
 .icon-header {
@@ -150,8 +158,6 @@ p > .card-title {
         background-color: var(--main-bg-color);
         border: none;
     }
-
-
 }
 
 /* ----------- Retina Screens ----------- */
@@ -164,7 +170,6 @@ p > .card-title {
         background-color: var(--main-bg-color);
         border: none;
     }
-
 }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
@@ -192,7 +197,6 @@ p > .card-title {
         position: fixed;
         top: 5;
     }
-
 }
 
 
@@ -207,7 +211,6 @@ p > .card-title {
         position: fixed;
         top: 5;
     }
-
 }
 
 
@@ -222,7 +225,6 @@ p > .card-title {
         position: fixed;
         top: 5;
     }
-
 }
 
 
