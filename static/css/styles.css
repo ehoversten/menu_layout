@@ -59,7 +59,7 @@ body {
 }
 
 .card {
-    height: 200px;  /* ? */
+    min-height: 200px;  /* ? */
 }
 
 .row {
@@ -91,11 +91,11 @@ p > .card-title {
     /* border: 2px dashed grey; */
     /* border: 2px solid grey; */
     border-radius: 15px;
-    height: 100%;
 }
 
 .khachapuri, .sandwich {
     margin: 50px 0;
+    padding: 20px 0;
 }
 
 .khachapuri-subtitle {
