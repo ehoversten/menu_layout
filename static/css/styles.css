@@ -86,14 +86,15 @@ p > .card-title {
     border-bottom: 2px solid var(--text-highlight-color);
 }
 
-.small-plates, .large-plates, .khachapuri {
+.small-plates, .large-plates, .khachapuri, .sandwich {
     border: 2px dotted grey;
     /* border: 2px dashed grey; */
     /* border: 2px solid grey; */
     border-radius: 15px;
+    height: 100%;
 }
 
-.khachapuri {
+.khachapuri, .sandwich {
     margin: 50px 0;
 }
 
